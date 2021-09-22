@@ -1,29 +1,48 @@
 # GCP Sample Logs 
 A repository of sample GCP logs for reference, including:
-- Google Workspace / Identity
-- Admin Activity Log 
-- Data Access Log
-- Access Transparency Log
-- System Event
-- Firewall Rules Log 
-- VPC Flow Log
-- Cloud DNS 
-- Cloud NAT 
-- Cloud CDN
-- HTTPS Load Balancer 
-- GKE 
-  - GKE Audit
-  - Kubernetes 
-  - AuditD 
-  - Intranode Visibility Flow Logs
-- Cloud Storage 
-  - Admin Activity
-  - Data Access
-  - Detailed Audit 
-  - GCS Usage Logs
-- Identity Aware Proxy
-
+- [Google Workspace / Identity](https://github.com/y4nben/gcp-sample-logs/tree/main/cloud-identity)
+  - [Adding Groupmember](https://github.com/y4nben/gcp-sample-logs/blob/main/cloud-identity/identity-add-groupmember.log)
+  - [User Creation](https://github.com/y4nben/gcp-sample-logs/blob/main/cloud-identity/identity-create-user.log)
+  - [User Login](https://github.com/y4nben/gcp-sample-logs/blob/main/cloud-identity/identity-user-login.log)
+- [Cloud Storage ](https://github.com/y4nben/gcp-sample-logs/tree/main/compute-engine)
+  - [Create Bucket (Admin Activity)](https://github.com/y4nben/gcp-sample-logs/blob/main/cloud-storage/gcs-admin-activity.log)
+  - [Set Bucket IAM Permissions](https://github.com/y4nben/gcp-sample-logs/blob/main/cloud-storage/gcs-admin-set-iam-permissions.log)
+  - [Create Object (Data Write)](https://github.com/y4nben/gcp-sample-logs/blob/main/cloud-storage/gcs-data-access-object-create.log)
+  - [Get Object (Data Read)](https://github.com/y4nben/gcp-sample-logs/blob/main/cloud-storage/gcs-data-access-object-get.log)
+  - [List Object (Data Read)](https://github.com/y4nben/gcp-sample-logs/blob/main/cloud-storage/gcs-data-access-object-list.log)
+  - [Enable/Disable Object Versioning](https://github.com/y4nben/gcp-sample-logs/blob/main/cloud-storage/gcs-obj-vers.log)
+  - [Public Bucket Usage](https://github.com/y4nben/gcp-sample-logs/blob/main/cloud-storage/gcs-usage.log)
+- [Compute Engine](https://github.com/y4nben/gcp-sample-logs/tree/main/compute-engine)
+  - [Set Instance Metadata](https://github.com/y4nben/gcp-sample-logs/blob/main/compute-engine/gce-admin-set-instance-metadata-instance.log)
+  - [Set Instance Project Metadata (1)](https://github.com/y4nben/gcp-sample-logs/blob/main/compute-engine/gce-admin-set-instance-metadata-project.log)
+  - [Set Instance Project Metadata (2)](https://github.com/y4nben/gcp-sample-logs/blob/main/compute-engine/gce-admin-set-instance-metadata-project-2.log)
+  - [Compute Engine Logging Agent](https://github.com/y4nben/gcp-sample-logs/blob/main/compute-engine/gce-os-agent-logging.log)
+- [Kubernetes Engine](https://github.com/y4nben/gcp-sample-logs/tree/main/kubernetes-engine)
+  - [Create GKE Cluster (Admin Activity)](https://github.com/y4nben/gcp-sample-logs/blob/main/kubernetes-engine/gke-admin-create-cluster.log)
+  - [AuditD Logs](https://github.com/y4nben/gcp-sample-logs/blob/main/kubernetes-engine/gke-auditD.log)
+  - [View GKE Config (Admin Read)](https://github.com/y4nben/gcp-sample-logs/blob/main/kubernetes-engine/gke-data-access-admin-read.log)
+  - [Intranode Visibility (Flow Log)](https://github.com/y4nben/gcp-sample-logs/blob/main/kubernetes-engine/gke-intranode-visibility.log)
+  - [Kubernetes Log](https://github.com/y4nben/gcp-sample-logs/blob/main/kubernetes-engine/gke-k8s.log)
+- [Network Telemetry](https://github.com/y4nben/gcp-sample-logs/tree/main/network)
+  - [Cloud CDN](https://github.com/y4nben/gcp-sample-logs/blob/main/network/cloud-cdn.log)
+  - [Cloud DNS Request](https://github.com/y4nben/gcp-sample-logs/blob/main/network/cloud-dns.log)
+  - [HTTPS Load Balancer](https://github.com/y4nben/gcp-sample-logs/blob/main/network/https-load-balancer.log)
+  - [Identity Aware Proxy](https://github.com/y4nben/gcp-sample-logs/blob/main/network/identity-aware-proxy.log)
+  - [Cloud NAT](https://github.com/y4nben/gcp-sample-logs/blob/main/network/network-cloud-nat.log)
+  - [Firewall](https://github.com/y4nben/gcp-sample-logs/blob/main/network/network-firewall-rule.log)
+  - [VPC Flow](https://github.com/y4nben/gcp-sample-logs/blob/main/network/network-vpc-flow.log)
+- [GCP Organization](https://github.com/y4nben/gcp-sample-logs/tree/main/organization)
+  - [Org Policy Deny Service Account Creation](https://github.com/y4nben/gcp-sample-logs/blob/main/organization/org-policy-deny-service-account-creation.log)
+  - [Org Policy Deny Service Account Key Creation](https://github.com/y4nben/gcp-sample-logs/blob/main/organization/org-policy-deny-service-account-key-creation.log)
+- [Security Command Center](https://github.com/y4nben/gcp-sample-logs/tree/main/security-command-center)
+  - [Bad Domain Finding](https://github.com/y4nben/gcp-sample-logs/blob/main/security-command-center/scc-bad-domain.log)
+  - [Bad IP Finding](https://github.com/y4nben/gcp-sample-logs/blob/main/security-command-center/scc-bad-ip.log)
+  - [Cryptocurrency Mining Finding](https://github.com/y4nben/gcp-sample-logs/blob/main/security-command-center/scc-coin-mining.log)
+  - [Leaked Credential Finding](https://github.com/y4nben/gcp-sample-logs/blob/main/security-command-center/scc-leaked-credentials.log)
+  - [Outgoing Intrusion Attempt Finding](https://github.com/y4nben/gcp-sample-logs/blob/main/security-command-center/scc-outgoing-intrusion-attempt.log)
+  - [Account Self Investigation Finding](https://github.com/y4nben/gcp-sample-logs/blob/main/security-command-center/scc-self-account-investigation.log)
+- [VPC Service Controls](https://github.com/y4nben/gcp-sample-logs/tree/main/vpc-service-controls)
+  - [VPC Service Control Violation](https://github.com/y4nben/gcp-sample-logs/blob/main/vpc-service-controls/vpc-sc-policy-violation.log)
 
 Coming Soon:
-- Packet Mirroring
 - Cloud IDS
